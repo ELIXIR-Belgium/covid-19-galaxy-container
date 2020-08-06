@@ -1,0 +1,19 @@
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build and push to Docker Hub
+      uses: docker/build-push-action@v1
+      with:
+        username: ${{ secrets.docker_registry_username }}
+        password: ${{ secrets.docker_registry_password }}
+        registry: quay.io
+        repository: galaxy/ena-upload
+        tags: latest, 19.01
+        path: galaxy
+        dockerfile: Dockerfile
