@@ -18,7 +18,7 @@ ADD bin/starter-service.sh /starter-service.sh
 #ADD /data /data/
 ADD tools.yaml tools.yaml 
 ADD /workflow /workflowDir
-
+RUN chmod 755 /workflow.sh
 RUN /setup-workflow.sh
 
 ENTRYPOINT ["/starter-service.sh"]
