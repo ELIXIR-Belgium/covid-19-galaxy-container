@@ -8,7 +8,7 @@
 #    docker run -p "8080:80" -t  containername 
 
 FROM quay.io/bgruening/galaxy:20.05
-MAINTAINER ELIXIR Belgium
+MAINTAINER ELIXIR Belgiu
 
 ENV GALAXY_CONFIG_BRAND "Covid-19"
 
@@ -17,5 +17,5 @@ ADD bin/docker-install-workflow.sh /setup-workflow.sh
 #ADD /data /data/
 ADD tools.yaml tools.yaml 
 ADD /workflow /workflowDir
-
+RUN chmod 755 /setup-workflow.sh
 RUN /setup-workflow.sh
