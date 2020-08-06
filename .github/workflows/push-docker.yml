@@ -13,7 +13,6 @@ jobs:
         username: ${{ secrets.docker_registry_username }}
         password: ${{ secrets.docker_registry_password }}
         registry: quay.io
-        repository: galaxy/ena-upload
+        repository: galaxy/covid-19-training
         tags: latest, 19.01
-        path: galaxy
         dockerfile: Dockerfile
