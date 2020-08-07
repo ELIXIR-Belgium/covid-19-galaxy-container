@@ -7,18 +7,15 @@
 # to run image:
 #    docker run -p "8080:80" -t  containername 
 
-FROM bgruening/galaxy-stable:19.01
-MAINTAINER ELIXIR Belgium
+FROM quay.io/bgruening/galaxy:20.05
+MAINTAINER ELIXIR Belgiu
 
 ENV GALAXY_CONFIG_BRAND "Covid-19"
 
 
 ADD bin/docker-install-workflow.sh /setup-workflow.sh
-ADD bin/starter-service.sh /starter-service.sh
 #ADD /data /data/
 ADD tools.yaml tools.yaml 
 ADD /workflow /workflowDir
 RUN chmod 755 /setup-workflow.sh
 RUN /setup-workflow.sh
-
-ENTRYPOINT ["/starter-service.sh"]
