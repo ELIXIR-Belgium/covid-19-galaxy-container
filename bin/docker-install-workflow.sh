@@ -57,7 +57,7 @@ echo " - Extracting tools from workflows"
 for w in `ls /workflowDir/*.ga | sort -r`
 do
     echo "------ $w ------"
-    workflow-to-tools -w $w -o /workflowDir/wftools.yaml -l "Read cleaning"
+    workflow-to-tools -w $w -o /workflowDir/wftools.yaml -l "Tools from workflows"
     echo " - Installing tools from workflow" 
     n=0
     until [ $n -ge 3 ]
