@@ -15,5 +15,5 @@ jobs:
         password: ${{ secrets.docker_registry_password }}
         registry: quay.io
         repository: galaxy/covid-19-training
-        tags: 20.05
+        tags: 20.05, latest
         dockerfile: Dockerfile
