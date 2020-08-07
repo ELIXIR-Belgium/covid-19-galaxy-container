@@ -1,3 +1,4 @@
+name: Image build test
 on:
   push:
     branches: 
