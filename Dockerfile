@@ -8,7 +8,7 @@
 #    docker run -p "8080:80" -t  containername 
 
 FROM quay.io/bgruening/galaxy:20.05
-MAINTAINER ELIXIR Belgiu
+MAINTAINER ELIXIR Belgium
 
 ENV GALAXY_CONFIG_BRAND "Covid-19"
 
