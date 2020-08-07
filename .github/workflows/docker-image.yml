@@ -3,6 +3,7 @@ on:
   push:
     branches: 
       - 20.05
+      - master
     pull_request:
         branches: [ master ]
 jobs:
