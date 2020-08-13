@@ -33,3 +33,8 @@ docker run --privileged -p 8080:80 quay.io/galaxy/covid-19-training
 **The run command explained**:
 - `-p "8080:80"` will let the container host Galaxy on port 8080
 - `--privileged` will allow the conatiner to load a reference genome through CVMFS when needed
+
+### Using the container
+
+When the container is running, open a webbrowser and go to [http://localhost:8080/](http://localhost:8080/) to open the Galaxy interface.
+
