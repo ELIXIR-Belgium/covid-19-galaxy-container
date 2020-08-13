@@ -9,5 +9,32 @@ This repo is used to build the Covid-19 Galaxy container supporting all the geno
 Run this container using following command:
 
 ```
+
+```
+## Usage
+
+### Building the container
+
+Build command:
+
+```
+docker build -t covid-19-training -f Dockerfile .    
+```
+
+### Running the container
+
+Run your builded container:
+
+```
+docker run --privileged -p 8080:80 covid-19-training
+```
+
+Or run the container from Quay.io:
+
+```
 docker run --privileged -p 8080:80 quay.io/galaxy/covid-19-training
 ```
+
+**The run command explained**:
+- `-p "8080:80"` will let the container host Galaxy on port 8080
+- `--privileged` will allow the conatiner to load a reference genome through CVMFS when needed
