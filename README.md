@@ -6,11 +6,6 @@
 This repo is used to build the Covid-19 Galaxy container supporting all the genomics an cheminformatics workflows from https://github.com/galaxyproject/SARS-CoV-2
 
 
-Run this container using following command:
-
-```
-
-```
 ## Usage
 
 ### Building the container
@@ -23,7 +18,7 @@ docker build -t covid-19-training -f Dockerfile .
 
 ### Running the container
 
-Run your builded container:
+Run your container :
 
 ```
 docker run --privileged -p 8080:80 covid-19-training
