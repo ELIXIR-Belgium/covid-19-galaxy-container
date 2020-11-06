@@ -36,5 +36,5 @@ docker run --privileged -p 8080:80 quay.io/galaxy/covid-19-training
 
 ### Using the container
 
-When the container is running, open a webbrowser and go to [http://localhost:8080/](http://localhost:8080/) to open the Galaxy interface. This instance will contain all the tools and workflows to execute the COVID-19 analyses. Login as admin@galaxy.org with password admin to access everything.
+When the container is running, open a webbrowser and go to [http://localhost:8080/](http://localhost:8080/) to open the Galaxy interface. This instance will contain all the tools and workflows to execute the COVID-19 analyses. Login as admin using `admin` as username and `password` as password to access everything.
 
